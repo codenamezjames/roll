@@ -12,5 +12,12 @@ for arg in sys.argv:
                 string = arg.split("d")
                 number = int(string[0]);
                 print("Rolling %s..." % arg)
+                arr = []
                 for x in range(0,number):
-                        print(randint(1,int(string[1])))
+                        num = randint(1,int(string[1]))
+                        arr.append(num)
+                        print(num)
+                if len(arr) > 1:
+                        print("Total is %s" % sum(arr))
+                print("")
+                print("")
